@@ -6,7 +6,9 @@ module.exports = {
    purge: {
       layers: ["components", "utilities"],
       content: ["./src/**/*.js"],
-      safelist: ["bg-red-500"],
+      options: {
+         whitelist: ["bg-red-500"],
+      },
    },
    theme: {
       fontFamily: {
